@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PROJECT</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"> <img src="img/logo.png" alt="Smiley face" height="auto" width="100%"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SOLUTIONS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRODUCTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">AUTOMATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RESOURCES</a>
+          </li>
+          
+         
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <div class="mr-2 idioma">
+            <strong class="en">EN </strong>
+          </div>
+          <div class="bandera">
+            <img src="img/bandera.png" alt="Smiley face" height="auto" width="40">
+        </div>
+        <form class="ml-5 form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+        
+         
+         
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ 
+  <body>
+
+    <div class="container-fluit">
+      
+      <div class="container">
+ 
+        <div class="row david">
+          <div class="col-sm-2">
+           </div>
+          <div class="col-sm-6">
+        <label class="texto" name="texto" id="texto">: </label> <br><br>
+        
+        <br><br>
+          <label class="nombres-label" name="nombres-label" id="nombres-label">numero 1: </label> <br><br>
+          <input class="" name="" id="num1"/>
+        <br><br>
+          <label class="" name="nombres-label" id="">numero 2: </label> <br><br>
+         <input class="" name="" id="num2"/>
+         <input type="button" id="sumanum" onclick="Sumar();" value="Calucular">
+         <input type="button" id="cambiaestilos" onclick="" value="Cambia estilos">
+          </div>
+          <div class="col-sm-2">
+           </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+
+
+    <script>
+
+    /* var usuario = prompt("Cual es tu peso?");
+      var planeta = prompt("Elige tu planeta. Si es martes oprime 1 y si es Jupiter oprime el 2:");
+      var peso = parseInt(usuario);
+      var g_tierra = 9.8;
+      var g_marte = 3.7;
+      var g_jupiter = 24.8;
+      var peso_final;
+      
+
+      if(planeta == 1)
+        {
+        peso_final = peso * g_marte / g_tierra;
+        peso_final = parseInt (peso_final);
+        document.write("Tu peso en martes es: " + peso_final + "Kg");
+        alert('Tu peso en Marte es: ' + peso_final + ' Kg');
+
+        }
+      else
+        {
+          peso_final = peso * g_jupiter / g_tierra;
+          peso_final = parseInt (peso_final);
+          document.write("Tu peso en Jupiter es: " + peso_final + "Kg");
+          alert("Tu peso en Jupiter es: " + peso_final + "Kg" );
+        }
+*/
+/*
+      var r1;
+      var r2;
+      var r3;
+
+      var usuario = prompt("Por favor regalame tu nombre:");
+      var r1 = prompt("Solo queria saber si eras tu " + usuario + ". Ya que lo se quiero saber si real mente amas a David Betan, si lo amas oprime el numero 1, sino, oprime por favor el numero 2: ");
+      
+        if (r1 == 1)
+        {
+         
+         alert("Wow genial!!! era la respuesta que esperaba, quiero decirte que el también te ama... ");
+         var r2 = prompt("¿Quieres que te cuente un secreto " + usuario + "? si la respuesta es si presiona la tecla 1, sino, presiona el 2:");
+          if(r2 == 1) 
+          {
+            alert("el secreto es que David daría todo por tenerte feliz y que desde aquella noche que fueron a mi casa que llaman muchos Alpha Centaury, el alcanzo a imaginar un futuro con un corazón tan noble como el tuyo");
+            var r3 = prompt("Cuanto crees que desde ese momento el se intereso por ti, teniendo una escala de 1 a 10?");
+
+            if(r3 >=6)
+            {
+              alert("Exacto!!!! porque supo desde ese momento que guardabas un gran secreto, asi como el que te acabo de contar... 💖");
+
+            }
+            alert("Ahora tomensen de las manos, densen un abrazo y cuando tengan el oido cerca a su voz, diganse pasito una frase que describa al otro... y luego denlen aceptar a este letrero...");
+
+
+            
+
+          }
+          else
+          {
+            alert("ouch! espero la proxima quieras escuchar el secreto, entonces no te molesto mas " + usuario);
+
+          }
+        }
+        
+
+        else
+        {
+          alert("ouch! espero la proxima puedas tener las cosas mas claras");
+
+        }
+
+        
+
+
+
+
+        /*else if ()
+          {
+
+
+          }*/
+    </script>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>
